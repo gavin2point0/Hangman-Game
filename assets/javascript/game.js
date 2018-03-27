@@ -2,7 +2,7 @@
 var wordArray = ["abyss", "boggle", "crpyt", "dizzying", "equip", "flapjack", "gazebo", "haphazard", "ivory", "jazz", "keyhole", "lengths", "megahertz", "numbskull", "oxygen", "pajama", "quiz", "razzmatazz", "scratch", "twelfth", "uptown", "vaporize", "wave", "xylophone", "zigzagging"];
 
 var hangman = document.getElementById("hangman");
-var content = document.getElementById("content");
+//var content = document.getElementById("content");
 var gameContent = document.getElementById("game-content");
 var wrongGuess = document.getElementById("wrong-guess");
 var header = document.getElementById("header");
@@ -11,7 +11,6 @@ var lossContent = document.getElementById("losses");
 
 var winCount = 0;
 var lossCount = 0;
-var gameOver = false;
 
 function run() {
     //selecting random word from array
@@ -57,7 +56,7 @@ function run() {
             }
 
             //if letter is not in the word
-            if (guess == -1 && !goodGuess && userGuess != "Meta") {
+            if (guess == -1 && !goodGuess && userGuess != "Meta" && wrongArray.indexOf(userGuess) == -1) {
                 mistakeCounter = mistakeCounter - 1;
                 //adds wrong guess to page
                 wrongArray.push(userGuess);
