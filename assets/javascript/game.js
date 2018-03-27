@@ -1,5 +1,5 @@
 //creating variables and array of words
-var wordArray = ["abyss", "boggle", "crpyt", "dizzying", "equip", "flapjack", "gazebo", "haphazard", "ivory", "jazz", "keyhole", "lengths", "megahertz", "numbskull", "oxygen", "pajama", "quiz", "razzmatazz", "scratch", "twelfth", "uptown", "vaporize", "wave", "xylophone", "zigzagging"];
+var wordArray = ["abyss", "boggle", "crypt", "dizzying", "equip", "flapjack", "gazebo", "haphazard", "ivory", "jazz", "keyhole", "lengths", "megahertz", "numbskull", "oxygen", "pajama", "quiz", "razzmatazz", "scratch", "twelfth", "uptown", "vaporize", "wave", "xylophone", "zigzagging"];
 
 var hangman = document.getElementById("hangman");
 //var content = document.getElementById("content");
